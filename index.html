@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <title>Current Affairs Seminar</title>
-    <style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <title>Current Affairs Seminar</title>
+  <style>
     .container {
       padding: 80px 120px;
     }
+
     .person {
       border: 10px solid transparent;
       margin-bottom: 25px;
@@ -18,50 +23,398 @@
       height: 80%;
       opacity: 0.8;
     }
+
     .person:hover {
       border-color: #a8da8b;
     }
-    </style>
-  </head>
-  <body>
-    <div class="container text-center">
-      <h1>Current Affairs Seminar</h1>
-      <p><em>The gateway to discussion.</em></p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <h3><strong>Admin Team</strong></h3><br>
-      <div class="row">
+
+    .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+    }
+
+    .bg-1 h3 {
+      color: #fff;
+    }
+
+    .bg-1 p {
+      font-style: italic;
+    }
+
+    .form-control {
+      border-radius: 0;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    h2 {
+      float: left;
+      width: 100%;
+      color: #fff;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    h2 span {
+      font-family: 'Libre Baskerville', serif;
+      display: block;
+      font-size: 45px;
+      text-transform: none;
+      margin-bottom: 20px;
+      margin-top: 30px;
+      font-weight: 700
+    }
+
+    h2 a {
+      color: #fff;
+      font-weight: bold;
+    }
+
+
+    section {
+
+      float: left;
+      width: 100%;
+      background: #43cea2;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #96b0ca, #43cea2);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to bottom, #96b0ca, #43cea2);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 30px 0;
+    }
+
+    .card {
+      -moz-box-direction: normal;
+      -moz-box-orient: vertical;
+      background-color: #fff;
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 1px;
+      border: none;
+    }
+
+    .card-header:first-child {
+      border-radius: 0;
+    }
+
+    .card-header {
+      background-color: #f7f7f9;
+      margin-bottom: 0;
+      padding: 20px 1.25rem;
+      border: none;
+
+    }
+
+    .card-header a i {
+      float: left;
+      font-size: 25px;
+      padding: 5px 0;
+      margin: 0 25px 0 0px;
+      color: #195C9D;
+    }
+
+    .card-header i {
+      float: right;
+      font-size: 30px;
+      width: 1%;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+
+    .card-header a {
+      width: 97%;
+      float: left;
+      color: #565656;
+    }
+
+    .card-header p {
+      margin: 0;
+    }
+
+    .card-header h3 {
+      margin: 0 0 0px;
+      font-size: 20px;
+      font-family: 'Slabo 27px', serif;
+      font-weight: bold;
+      color: #3fc199;
+    }
+
+    .card-block {
+      -moz-box-flex: 1;
+      flex: 1 1 auto;
+      padding: 20px;
+      color: #232323;
+      box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.1);
+      border-top: 1px soild #000;
+      border-radius: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1>Current Affairs Seminar</h1>
+    <p><em>The gateway to discussion.</em></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="container text-center">
+    <h3><strong>Admin Team</strong></h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p><strong>Name</strong></p><br>
+        <img src="placeholder.png" class="img-circle person" alt="Random Name">
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Name</strong></p><br>
+        <img src="placeholder.png" class="img-circle person" alt="Random Name">
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Name</strong></p><br>
+        <img src="placeholder.png" class="img-circle person" alt="Random Name">
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p><strong>Name</strong></p><br>
+        <img src="placeholder.png" class="img-circle person" alt="Random Name">
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Name</strong></p><br>
+        <img src="placeholder.png" class="img-circle person" alt="Random Name">
+      </div>
+      <div class="col-sm-4">
+        <p><strong>Name</strong></p><br>
+        <img src="placeholder.png" class="img-circle person" alt="Random Name">
+      </div>
+    </div><br>
+  </div>
+
+  <div id="topics" class="bg-1">
+    <div class="container">
+      <h2 class="text-center"><span>DISCUSSION TOPICS</span></h2>
+      <p class="text-center">Current Topics<br>Global Events</p>
+
+      <div class="row text-center">
         <div class="col-sm-4">
-          <p><strong>Name</strong></p><br>
-          <img src="placeholder.png" class="img-circle person" alt="Random Name">
+          <div class="thumbnail">
+            <img src="placeholder.png" alt="Paris" width="300" height="300">
+            <p><strong>Topic Title</strong></p>
+            <p>Lorem Ipsum</p>
+          </div>
         </div>
         <div class="col-sm-4">
-          <p><strong>Name</strong></p><br>
-          <img src="placeholder.png" class="img-circle person" alt="Random Name">
+          <div class="thumbnail">
+            <img src="placeholder.png" alt="New York" width="300" height="300">
+            <p><strong>Topic Title</strong></p>
+            <p>Lorem Ipsum</p>
+          </div>
         </div>
         <div class="col-sm-4">
-          <p><strong>Name</strong></p><br>
-          <img src="placeholder.png" class="img-circle person" alt="Random Name">
+          <div class="thumbnail">
+            <img src="placeholder.png" alt="San Francisco" width="300" height="300">
+            <p><strong>Topic Title</strong></p>
+            <p>Lorem Ipsum</p>
+          </div>
         </div>
-      </div><br>
-      <div class="row">
-        <div class="col-sm-4">
-          <p><strong>Name</strong></p><br>
-          <img src="placeholder.png" class="img-circle person" alt="Random Name">
-        </div>
-        <div class="col-sm-4">
-          <p><strong>Name</strong></p><br>
-          <img src="placeholder.png" class="img-circle person" alt="Random Name">
-        </div>
-        <div class="col-sm-4">
-          <p><strong>Name</strong></p><br>
-          <img src="placeholder.png" class="img-circle person" alt="Random Name">
-        </div>
-      </div><br>
+      </div>
     </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center"><span>Previous Discussion Topics</span></h2>
+          <div class="col-md-8 offset-md-2">
+            <div class="bd-example" data-example-id="">
+              <div id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingOne">
+                    <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                        aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Topic1</h3>
+                        <p>Desc</p>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                    aria-expanded="false">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                      nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingTwo">
+                    <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Topic2</h3>
+                        <p>Desc</p>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                    aria-expanded="false">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                      nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingThree">
+                    <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Topic3</h3>
+                        <p>Desc</p>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                    aria-expanded="false">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                      nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingOne">
+                    <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Topic4</h3>
+                        <p>Desc</p>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+
+                  <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                    aria-expanded="false">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                      nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingTwo">
+                    <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Topic5</h3>
+                        <p>Desc</p>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                    aria-expanded="false">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                      nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingThree">
+                    <div class="mb-0">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+                        aria-controls="collapseOne" class="collapsed">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        <h3>Topic5</h3>
+                        <p>Desc</p>
+                      </a>
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                    aria-expanded="false">
+                    <div class="card-block">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                      wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                      eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                      assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                      nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                      farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                      labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
